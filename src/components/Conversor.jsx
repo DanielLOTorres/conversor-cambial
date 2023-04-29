@@ -24,7 +24,7 @@ export default function Conversor({moedaA, moedaB}) {
     return (
         <div className='Conversor'>
             <h2>{moedaA} Para {moedaB}</h2>
-            <input type="text" value={moedaAValue} onChange={(e) => setMoedaAValue(e.target.value)}/>
+            <input type="number" value={moedaAValue} onChange={(e) => setMoedaAValue(e.target.value)}/>
             <br />
             <button onClick={converter}>Converter</button>
             <h2>{moedaBValue} {moedaB}</h2>
