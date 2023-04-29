@@ -13,8 +13,6 @@ export default function Conversor({moedaA, moedaB}) {
     .then(response => response.json())
     .then(data => {
         let cambio  = Object.values(data.data)[0]
-        console.log(data.data)
-        console.log(cambio, moedaAValue)
         setMoedaBValue((moedaAValue * cambio).toFixed(2))
     })
     .catch(error => console.error(error));
